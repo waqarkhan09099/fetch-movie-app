@@ -1,0 +1,18 @@
+.container{
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.438);
+    padding: 0 2rem;
+    overflow: auto;
+    transition:all 1s ease;
+}
+
+.container:hover{
+    transform:scale(1.07);
+}
