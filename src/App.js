@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Wrapper from './Components/Wrapper/Wrapper'
 import Movie from './Components/MovieData/Movie'
 import { ButtonUi } from './Components/UI/UI'
@@ -48,14 +48,14 @@ function App() {
 
   async function getDataFunc(data){
     alert("sorry due to firebase unauthorized. information not post at database")
-    const response=await fetch(`https://my-react-project-fd7ea-default-rtdb.firebaseio.com/movies.json`,{
-      method:"POST",
-      body:JSON.stringify(data),
-      headers:{
-          'Content-Type':'application/json'
-      }
+    // const response=await fetch(`https://my-react-project-fd7ea-default-rtdb.firebaseio.com/movies.json`,{
+    //   method:"POST",
+    //   body:JSON.stringify(data),
+    //   headers:{
+    //       'Content-Type':'application/json'
+    //   }
 
-    });
+    // });
 
   }
   return (
